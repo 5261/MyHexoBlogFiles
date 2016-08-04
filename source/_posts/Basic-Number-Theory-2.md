@@ -30,7 +30,7 @@ permalink: Basic-Number-Theory-2
 #### 【代码】
 
 ```c++
-void exgcd(int a, int b, int d, int &x, int &y) {
+void exgcd(int a, int b, int &d, int &x, int &y) {
     if (!b) d = a, x = 1, y = 0;
     else exgcd(b, a % b, d, y, x), y -= x * (a / b);
 }
@@ -60,12 +60,12 @@ $$
 \begin{align\*}
 gcd(a, b) &= bx_0 + (a - b \lfloor \frac a b \rfloor)y_0 \\\\
           &= bx_0 + ay_0 - b \lfloor \frac a b \rfloor y_0 \\\\
-          &= ay_0 + b(x_0 - b \lfloor \frac a b \rfloor y_0) \\\\
+          &= ay_0 + b(x_0 - \lfloor \frac a b \rfloor y_0) \\\\
 \end{align\*}
 $$
 
 所以我们就有
-$$ x_1 = y_0, y_1 = x_0 - \lfloor \frac a b \rfloor by_0 $$
+$$ x_1 = y_0, y_1 = x_0 - \lfloor \frac a b \rfloor y_0 $$
 
 证毕。
 

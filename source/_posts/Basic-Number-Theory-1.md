@@ -286,5 +286,5 @@ while(n != 1){
 
 有点长，断开好惹QwQ 。
 
-传送门 -> [数论基础学习笔记（二）](http://5261.github.io/Basic-Numer-Theory-2)
+传送门 -> [数论基础学习笔记（二）](http://5261.github.io/Basic-Number-Theory-2)
 
